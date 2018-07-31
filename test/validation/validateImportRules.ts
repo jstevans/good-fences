@@ -16,5 +16,9 @@ describe('validateImportRules', () => {
 
         // Act
         validateImportRules(<any>sourceFile, null);
+
+        // Assert
+        expect(getConfigsForFile.default).toHaveBeenCalledWith(sourceFile);
+        expect;
     });
 });
