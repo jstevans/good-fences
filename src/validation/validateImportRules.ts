@@ -10,7 +10,7 @@ export default function validateImportRules(
     sourceFile: NormalizedPath,
     importRecord: ImportRecord
 ) {
-    // Validate against each config that applies to the imported file
+    // Validate against each config that applies to the source file
     let configsForSource = getConfigsForFile(sourceFile);
     for (let config of configsForSource) {
         validateConfig(config, sourceFile, importRecord);
